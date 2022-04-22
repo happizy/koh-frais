@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>Koh Frais - Accueil</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Page d'accueil">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <script src="bootstrap/js/bootstrap.bundle.js"></script> 
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+
+        <!-- MENU -->
+        <header>
+            <!-- Logo koh frais haut de page -->
+            <div class="row mx-auto d-none d-sm-block">
+                <aside class="text-center py-3">
+                    <img src="../ressources/LOGOS_ICONES/logoclair.png" title="logo koh frais clair" alt="logo koh frais clair" height="125" width="245">
+                </aside>
+            </div>
+            <!-- Menu pour tablettes, ordinateurs -->
+            <div class="row sticky-top mx-auto d-none d-sm-block">
+                <nav class="navbar navbar-expand-sm">
+                    <a class="navbar-brand position-absolute" href="index.html"><img src="../ressources/LOGOS_ICONES/iconefonce.png" title="icone koh frais foncé" alt="icone koh frais foncé" height="100" width="100"></a> <!-- à adapter selon l'arborescence -->
+                    <ul class ="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-5 px-md-3"><a class="nav-link" href="particulier/particulier.html">PARTICULIERS</a></li> <!-- à adapter selon l'arborescence -->
+                        <li class="nav-item px-lg-5 px-md-3"><a class="nav-link" href="professionnel/professionnel.html">PROFESSIONNELS</a></li> <!-- à adapter selon l'arborescence -->
+                        <li class="nav-item px-lg-5 px-md-3"><a class="nav-link" href="infos.html">QUI SOMMES-NOUS</a></li> <!-- à adapter selon l'arborescence -->
+                    </ul>
+                </nav>
+            </div>
+            <!-- Menu pour téléphones portables -->
+            <div class="row sticky-top mx-auto d-block d-sm-none ">
+                <nav class="navbar">
+                    <a class="navbar-brand position-absolute" href="index.html"><img src="../ressources/LOGOS_ICONES/iconeclair.png" title="icone koh frais clair" alt="icone koh frais clair" height="40" width="40"></a> <!-- à adapter selon l'arborescence -->
+                    <h2 class="text-center mx-auto">KOH FRAIS</h2>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggle" aria-controls="navbarToggle"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="../ressources/LOGOS_ICONES/list.png" title="icone list bootstrap" alt="icone list bootstrap">
+                    </button>
+                </nav>
+                <div class="collapse" id="navbarToggle">
+                    <div class="p-4 text-center">
+                        <a class="nav-link d-block m-0 py-3 col-12" href="particulier/particulier.html">PARTICULIERS</a> <!-- à adapter selon l'arborescence -->
+                        <a class="nav-link d-block m-0 py-3 col-12" href="professionnel/professionnel.html">PROFESSIONNELS</a> <!-- à adapter selon l'arborescence -->
+                        <a class="nav-link d-block m-0 py-3 col-12" href="infos.html">QUI SOMMES NOUS</a> <!-- à adapter selon l'arborescence --> 
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container mt-5 py-5 text-center text-lg-start">
+            <main>
+                <section>
+                    <div class="row">
+                        <h1 class="col-12 d-block d-lg-none my-2">Nos produits phares</h1>
+                        <!-- Carousel produits phares-->
+                        <div id="carouselIndex" class="carousel slide col-12 col-lg-6 rounded-3 pe-" data-bs-ride="carousel">
+                            <!-- Indicateurs du bas -->
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="2"></button>
+                            </div>
+                            <!-- slides, images à défiler -->
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="particulier/bac_artisanal_glace.html"><img src="../ressources/PHOTOS/Bac_glace2.jpg" alt="bac de glace" title="bac de glace" class="d-block w-100"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Bac de glace BIO</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="particulier/buche_noel.html"><img src="../ressources/PHOTOS/Buche_2.jpg" alt="buche" title="buche" class="d-block w-100"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Bûche de Nöêl</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="particulier/vacherin.html"><img src="../ressources/PHOTOS/Vacherin_4.jpg" alt="vacherin" title="vacherin" class="d-block w-100"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Vacherin</h5>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- icônes (droite et gauche) -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndex" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndex" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        <article class="col-lg-6 my-3 ps-5">
+                            <h1 class="col-12 d-none d-lg-block">Nos produits phares</h1>
+                            <p class="col-12">Ea tempor ea dolor fugiat occaecat do ullamco et amet aliquip duis consequat. Sit elit esse magna commodo in aliqua officia consequat. Ex dolor nostrud enim culpa pariatur velit et minim. Consectetur pariatur et ullamco sit est labore ex adipisicing cupidatat ex in ut cupidatat.
+    
+    Qui elit esse non velit amet Lorem id occaecat. Irure magna aute excepteur voluptate nulla cillum sit. Officia sint pariatur amet officia Lorem reprehenderit sint ex exercitation elit ut in et. Nostrud laborum eiusmod adipisicing est velit irure consectetur. Consectetur fugiat minim est excepteur do voluptate irure reprehenderit.</p>
+                        </article>
+                    </div>
+                </section>
+                
+                <img class="mx-auto my-5 d-block img-fluid" src="../ressources/LOGOS_ICONES/iconeglace.png" title="barre horizontale" alt="barre horizontale">
+                
+                <!-- Choix entre page particuliers et page professionnels -->
+                <section>
+                    <div class="row">
+                        <h1 class="col-12 d-block d-md-none my-2">Particuliers</h1>
+                        <article class="col-12 col-md-5 ps-lg-5">
+                            <a class="" href="particulier/particulier.html"><img class="img-fluid rounded-3 h-75 h-sm-100 w-auto" src="../ressources/PHOTOS/Coulis_caramel_2.png" title="coulis caramel" alt="coulis caramel" width="550" height="650">
+                            <h1 class="col-12 d-none d-md-block my-2">Particuliers</h1>
+                            <p>Destinés à la consommation personnelle</p></a>
+                        </article>
+                        <img class ="col-md-2 d-none d-md-block mb-5 pb-5" src="../ressources/LOGOS_ICONES/barreverticale.png" title="barre verticale" alt="barre verticale">
+                        <h1 class="col-12 d-block d-md-none my-2">Professionnels</h1>
+                        <article class="col-12 col-md-5">
+                            <a href="professionnel/professionnel.html"><img class ="img-fluid rounded-3 h-75 h-sm-100 w-auto" src="../ressources/PHOTOS/Fruits_framboises_2.png" title="lot de framboises" alt="lot de framboises" width="550" height="650">
+                            <h1 class="col-12 d-none d-md-block my-2">Professionnels</h1>
+                            <p>Produits et matières premières en grande quantité</p></a>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        
+        <!-- Bas de page -->
+        <footer class="text-center">
+            <div class="container">
+                <div class="row p-3">
+                    <div class="col-md-1 col-auto"></div>
+                    <div class="col-md-4 col-12 my-2 text-center text-md-start">
+                        <h3>Réseaux sociaux</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="https://fr-fr.facebook.com/KOHFRAIS/"><img src="../ressources/LOGOS_ICONES/facebook.svg" title="icone facebook bootstrap" alt="icone facebook bootstrap"> Facebook</a></li> 
+                            <li><a href="https://www.twitter.com/KOHFRAIS"><img src="../ressources/LOGOS_ICONES/twitter.svg" title="icone twitter bootstrap" alt="icone twitter bootstrap"> Twitter</a></li> <!-- à adapter selon l'arborescence -->
+                            <li><a href="https://www.instagram.com/KOHFRAIS"><img src="../ressources/LOGOS_ICONES/instagram.svg" title="icone instagram bootstrap" alt="icone instagram bootstrap"> Instagram</a></li> <!-- à adapter selon l'arborescence -->
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-0"></div>
+                    <div class="col-md-4 col-12 my-2 text-center text-md-start">
+                        <h3>Contact</h3>
+                        <ul class="list-unstyled">
+                            <li><img src="../ressources/LOGOS_ICONES/telephone.svg" title="icone telephone bootstrap" alt="icone telephone bootstrap"> 06 12 23 45 67</li> <!-- à adapter selon l'arborescence -->
+                            <li><a href="mailto:contact.kohfrais@mail.fr"><img src="../ressources/LOGOS_ICONES/envelope.svg" title="icone enveloppe bootstrap" alt="icone enveloppe bootstrap"> contact.kohfrais@mail.fr</a></li> <!-- à adapter selon l'arborescence -->
+                        </ul>
+                    </div>
+                    <div class="col-md-1 col-auto"></div>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                © 2021 Copyright:
+                <a href="index.html">Koh Frais</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
